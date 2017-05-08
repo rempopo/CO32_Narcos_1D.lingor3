@@ -355,7 +355,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="CO32 NARCOS (1A)";
+		briefingName="CO32 NARCOS (1D)";
 		overviewText="Killl Pablo Escobar";
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;

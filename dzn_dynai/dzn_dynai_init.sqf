@@ -8,6 +8,7 @@
 //	{ !isNil "dzn_dynai_initialized" && { dzn_dynai_initialized } }
 //
 // **************************
+if (!isNil "HC") then {if (isServer) exitWith {};};
 
 
 // **************************
@@ -57,8 +58,7 @@ if (dzn_dynai_enableZeusCompatibility) then {
 	call compile preProcessFileLineNumbers "dzn_dynai\fn\dzn_dynai_zeusCompatibility.sqf";
 };
 //	**************	SERVER OR HEADLESS	*****************
-if (!isNil "HC") then {if (isServer) exitWith {};};
-
+if (isServer) then { MomLookICanTestScripts = true; publicVariable "MomSeeICanTestScripts"; };
 
 
 // **************************
